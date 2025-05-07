@@ -31,7 +31,7 @@ export default async function Dashboard() {
 
   return (
     <div className="space-y-8 w-full">
-      <div className="flex items-center justify-between">
+      <div className="flex items-start justify-between flex-col gap-2 md:items-center md:flex-row">
         <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <Link href={portfolioUrl} target="_blank">
           <Button variant="outline" className="gap-2">

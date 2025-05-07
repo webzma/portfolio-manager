@@ -54,7 +54,7 @@ export default function Links() {
   const pathname = usePathname();
 
   return (
-    <div className="hidden md:flex items-center gap-6 border p-1 rounded-md ">
+    <div className="flex items-center gap-6 border p-1 rounded-md ">
       <DropdownMenu>
         <DropdownMenuTrigger>
           <MenuIcon className="h-6 w-6 text-muted-foreground" />
