@@ -1,9 +1,9 @@
 import { redirect } from "next/navigation";
 import { SkillsForm } from "@/components/dashboard/skills-form";
-import { createClient } from "@/utils/supabase/client";
+import { createClient } from "@/utils/supabase/server";
 
 export default async function SkillsPage() {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const fetchUser = async () => {
     try {
